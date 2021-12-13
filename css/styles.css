@@ -1,131 +1,4 @@
-/* CSS Reset */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-body {
-  line-height: 1;
-}
-ol,
-ul {
-  list-style: none;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* Global Setting */
+/* Global Settings */
 body {
   background-color: black;
   font-family: Arial, Helvetica, sans-serif;
@@ -133,10 +6,6 @@ body {
 
 section {
   padding: 0 7%;
-}
-
-h1, h2, h3 {
- font-family: 'Bebas Neue', cursive;
 }
 
 .bg-style {
@@ -150,20 +19,22 @@ h1, h2, h3 {
   padding: 0 0;
 }
 
-.big-title, .title, .subtitle {
+.big-title,
+.title,
+.subtitle {
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .big-title {
-  color:white;
+  color: white;
   text-transform: uppercase;
   font-size: calc(56rem / 16);
   letter-spacing: 3px;
   line-height: 1.33;
-  /* margin: 20px 0; */
 }
 
-.title, .subtitle {
+.title,
+.subtitle {
   font-size: 1.5rem !important;
   line-height: 1.167 !important;
   letter-spacing: 2px !important;
@@ -173,7 +44,11 @@ h1, h2, h3 {
   color: #ffb548 !important;
 }
 
-.context, .link-text, .link-text:hover, .mini-text, .big-yellowy-button {
+.context,
+.link-text,
+.link-text:hover,
+.mini-text,
+.big-yellowy-button {
   font-family: "Open Sans", sans-serif;
 }
 
@@ -182,7 +57,8 @@ h1, h2, h3 {
   line-height: 1.375;
 }
 
-.link-text, .link-text:hover {
+.link-text,
+.link-text:hover {
   text-decoration: none;
   font-weight: 700;
   font-size: calc(12rem/16);
@@ -193,7 +69,7 @@ h1, h2, h3 {
 }
 
 .mini-text {
-  color:white;
+  color: white;
   font-size: calc(14rem/16);
   line-height: 1.36;
   opacity: 50%;
@@ -222,15 +98,14 @@ h1, h2, h3 {
 
 /* Main Page */
 #main-page {
-  background-image: radial-gradient(
-      189.96% 61.18% at 50% 38.82%,
+  background-image: radial-gradient(189.96% 61.18% at 50% 38.82%,
       rgba(255, 181, 72, 0) 0%,
       rgba(52, 44, 29, 0.80319) 73.22%,
-      #08090a 99.74%
-    ),
-    url("assets/main-bg.jpg");
+      #08090a 99.74%),
+    url("../assets/mainpage/bg-img/main-bg.jpg");
   text-align: center;
-  overflow-x: hidden;
+  overflow: hidden;
+  padding-bottom: 100px;
 }
 
 .mainpage-judul {
@@ -238,35 +113,33 @@ h1, h2, h3 {
 }
 
 .mainpage h1 {
-  margin-top: 175px;
+  margin-top: 220px;
   font-size: 4.5rem;
   font-weight: 700;
   letter-spacing: 3px;
   font-family: Arial;
 }
 
-.mainpage h2 {
-  margin: 75px 0;
+.mainpage h3 {
+  margin: 40px 0;
 }
 
 .mainpage p {
-  margin-top: 200px;
+  margin-top: 220px;
   margin-bottom: 0;
 }
 
 /* About */
 #about {
-  background-image: radial-gradient(
-      136.03% 54.57% at 50% 48.04%,
+  background-image: radial-gradient(136.03% 54.57% at 50% 48.04%,
       rgba(255, 255, 255, 0) 0%,
       rgba(0, 0, 0, 0) 60.63%,
-      #080a0b 99.74%
-    ),
-    url("assets/the-games-bg.jpg");
+      #080a0b 99.74%),
+    url("../assets/mainpage/bg-img/the-games-bg.jpg");
 }
 
 .about {
-  padding: 110px 0px;
+  padding: 130px 0px;
 }
 
 /* Carousel */
@@ -284,24 +157,22 @@ h1, h2, h3 {
 
 /* Game Features */
 #features {
-  background-image: radial-gradient(
-      136.03% 54.57% at 50% 48.04%,
+  background-image: radial-gradient(136.03% 54.57% at 50% 48.04%,
       rgba(255, 255, 255, 0) 0%,
       rgba(0, 0, 0, 0) 60.63%,
-      #080a0b 99.74%
-    ),
-    url("assets/features.jpg");
+      #080a0b 99.74%),
+    url("../assets/mainpage/bg-img/features.jpg");
   max-height: 870px;
 }
 
 .judul-features {
-  margin-top: 150px;
+  margin-top: 160px;
 }
 
 /* Accordion */
 .accordion {
   margin-top: 50px;
-  margin-bottom: 150px;
+  margin-bottom: 200px;
   padding-left: 30px;
 }
 
@@ -329,24 +200,23 @@ button:not(.collapsed) {
 
 /* System Requirement */
 #system-requirements {
-  background-image: radial-gradient(
-      33.26% 45% at 64.32% 47.1%,
+  background-image: radial-gradient(33.26% 45% at 64.32% 47.1%,
       rgba(255, 255, 255, 0) 3.36%,
       rgba(0, 0, 0, 0) 19.22%,
       #080a0b 99.74%),
-    url("assets/requirements.png");
-    text-align: left;
+    url("../assets/mainpage/bg-img/requirements.png");
+  text-align: left;
 }
 
 .system-req-top {
   opacity: 1;
-  padding-top: 110px;
+  padding-top: 140px;
   padding-bottom: 50px;
 }
 
 .wrapper {
   padding-top: 10px;
-  padding-bottom: 50px;
+  padding-bottom: 75px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -369,17 +239,15 @@ button:not(.collapsed) {
 /* Press Quotes */
 /* Top Scores Section */
 #press-quotes-container {
-  background-image: radial-gradient(
-      70.52% 37.27% at 24.21% 47.47%,
+  background-image: radial-gradient(70.52% 37.27% at 24.21% 47.47%,
       rgba(35, 15, 15, 0) 0%,
       rgba(0, 0, 0, 0) 51.1%,
-      #080a0b 99.74%
-    ),
-    url("assets/press-quotes.png");
+      #080a0b 99.74%),
+    url("../assets/mainpage/bg-img/press-quotes.png");
 }
 
 .top-scores-body {
-  margin: 150px 50px 0;
+  margin: 150px 50px 100px;
   padding: auto 5px;
 }
 
@@ -425,23 +293,21 @@ button:not(.collapsed) {
 
 /* Newsletter */
 #newsletter {
-  background-image: radial-gradient(
-    45.43% 53.19% at 50% 50%,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(0, 0, 0, 0) 46.15%,
-    #080a0b 99.74%
-  ), url("assets/newsletter/artefak.png");
+  background-image: radial-gradient(45.43% 53.19% at 50% 50%,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(0, 0, 0, 0) 46.15%,
+      #080a0b 99.74%), url("../assets/mainpage/newsletter/artefak.png");
   background-repeat: no-repeat;
   background-size: 30%;
   background-position: left;
-  padding-top: 80px;
+  padding-top: 150px;
   padding-bottom: 100px;
 }
 
 .newsletter-content {
-    margin: auto;
-    line-height: 1.1;
-    padding: 20px 0;
+  margin: auto;
+  line-height: 1.1;
+  padding: 20px 0;
 }
 
 .newsletter-content h2 {
@@ -467,7 +333,7 @@ input.form-control {
 }
 
 @media screen and (max-width:1207px) {
-  button.sub.big-yellowy-button{
+  button.sub.big-yellowy-button {
     width: 20rem;
   }
 }
@@ -480,7 +346,8 @@ input.form-control {
 /* For responsiveness' sake */
 /* Up to Small Screen */
 @media (max-width:576px) {
-  /* global-settings */ 
+
+  /* global-settings */
   section {
     padding: 0 3%;
   }
@@ -489,12 +356,14 @@ input.form-control {
     font-size: 3.1rem;
   }
 
-  .subtitle, .title {
+  .subtitle,
+  .title {
     font-size: 1.1rem !important;
     letter-spacing: 1px;
   }
 
-  .mini-text, .link-text {
+  .mini-text,
+  .link-text {
     font-size: 0.9rem !important;
   }
 
@@ -503,7 +372,8 @@ input.form-control {
   }
 
   /* mainpage */
-  .mainpage-judul h1, .mainpage p {
+  .mainpage-judul h1,
+  .mainpage p {
     margin-top: 120px !important;
   }
 
@@ -512,7 +382,7 @@ input.form-control {
     line-height: calc(82.79/72);
   }
 
-  .mainpage-judul h2 {
+  .mainpage-judul h3 {
     margin: 25px 0;
   }
 
