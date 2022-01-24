@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #9C835F;
+}
+
+.row {
+    --bs-gutter-x: 0;
+}
+
+/* global settings */
+span,
+h1,
+h2,
+p {
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+.container-fluid {
+    padding: 0 3%;
+}
+
+/* judul */
+.judul {
+    padding: 20px 0px;
+}
+
+.back-btn {
+    color: #724C21 !important;
+    text-decoration: none;
+    font-size: calc(72rem/16);
+    margin-left: 35px;
+}
+
+#logo {
+    margin: 0 20px;
+}
+
+.game-title,
+.player {
+    font-size: calc(36rem/16);
+    line-height: 1.36;
+    text-align: center;
+}
+
+.game-title {
+    color: #F9B23D;
+    letter-spacing: 0px;
+    padding: 0px 10px;
+}
+
+.player {
+    color: #000000;
+}
+
+/* game-layout */
+#game-layout {
+    padding: 0 7%;
+}
+
+.btn-container {
+    width: 185px;
+}
+
+.user-choice:hover {
+    background-color: rgba(196, 196, 196, 0.8);
+    border-radius: 30px;
+}
+
+.clicked {
+    background-color: #C4C4C4;
+    border-radius: 30px;
+}
+
+.rock {
+    width: 128px;
+}
+
+.paper {
+    width: 115px;
+}
+
+.scissors {
+    width: 134px;
+}
+
+/* vs & result */
+.result {
+    text-align: center;
+}
+
+.vs {
+    color: #BD0000;
+    font-size: calc(144rem/16);
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.1em;
+}
+
+.win,
+.draw {
+    color: white;
+    border-radius: 10px;
+    transform: rotate(-28.87deg);
+    font-weight: 700;
+    font-size: calc(38rem/16);
+    max-width: calc(271rem/16);
+    padding: 20px;
+}
+
+.win {
+    background: #4C9654;
+}
+
+.draw {
+    background: #035B0C;
+}
+
+/* refresh button */
+.refresh-btn {
+    max-width: 77px;
+    padding: 50px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .player {
+        font-size: calc(30rem/16);
+        letter-spacing: 0.5px;
+    }
+
+    .vs {
+        font-size: calc(110rem/16);
+    }
+
+    .win,
+    .draw {
+        font-size: calc(26rem/16);
+        line-height: 1.7;
+    }
+
+}
